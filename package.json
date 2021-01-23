@@ -3,7 +3,7 @@
     "version": "1.0.1",
     "description": "Repository for exercise files used in the LinkedIn Learning course `JavaScript Essential Training` instructed by Morten Rand-Hendriksen and published 2020.",
     "main": "index.html",
-    "author": "Morten Rand-Hendriksen",
+    "author": "James VanWaza",
     "license": "SEE LICENSE IN LICENSE",
     "devDependencies": {
         "eslint": "^7.18.0",
