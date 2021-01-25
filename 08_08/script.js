@@ -9,9 +9,9 @@
  */
 
 const tipCalculator = (sum, percentage) => {
-  let tip = sum * (percentage / 100);
-  let total = sum + tip;
-  console.log(`
+    let tip = sum * (percentage / 100);
+    let total = sum + tip;
+    console.log(`
       Sum before tip: ${sum}
       Tip percentage: ${percentage}%
       Tip:            ${tip.toFixed(2)}
