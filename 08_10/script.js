@@ -53,5 +53,4 @@ const tipCalculator = (sum, percentage, locale, currency, callback) => {
 };
 
 tipCalculator(29.95, 18, "de-DE", "EUR", printHTML);
-
 tipCalculator(29.95, 18, "nb-NO", "NOK", printHTML);
