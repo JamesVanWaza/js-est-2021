@@ -14,20 +14,14 @@ const lidToggle = function() {
     let backpackObject = backpackObjectArray.find(({ id }) => id === this.parentElement.id);
 
     // Toggle lidOpen status
-    backpackObject.lidOpen == true ?
-        backpackObject.lidOpen = false :
-        backpackObject.lidOpen = true;
+    backpackObject.lidOpen == true ? backpackObject.lidOpen = false : backpackObject.lidOpen = true;
 
     // Toggle button text
-    this.innerText == "Open lid" ?
-        this.innerText = "Close lid" :
-        this.innerText = "Open lid";
+    this.innerText == "Open lid" ? this.innerText = "Close lid" : this.innerText = "Open lid";
 
     // Set visible property status text
     let status = this.parentElement.querySelector(".backpack__lid span");
-    status.innerText == "closed" ?
-        (status.innerText = "open") :
-        (status.innerText = "closed");
+    status.innerText == "closed" ? (status.innerText = "open") : (status.innerText = "closed");
 }
 
 /**
@@ -64,12 +58,12 @@ const backpackList = backpackObjectArray.map((backpack) => {
   `;
 
     const button = backpackArticle.querySelector(".lid-toggle")
-    const status = backpackArticle.querySelector(".backpack__lid span")
+    const status = backpackArticle.querySelector(".backpack__lid span");
 
     button.addEventListener("click", (event) => {
-        console.log(event)
-        status.innerText === "open" ? status.innerText = "closed" : status.innerText = "open"
-    })
+        console.log(event);
+        status.innerText === "open" ? status.innerText = "closed" : status.innerText = "open";
+    });
 
     return backpackArticle;
 });
