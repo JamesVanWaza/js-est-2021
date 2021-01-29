@@ -18,20 +18,14 @@ const lidToggle = function(event, button, newArg) {
     );
 
     // Toggle lidOpen status
-    backpackObject.lidOpen == true ?
-        (backpackObject.lidOpen = false) :
-        (backpackObject.lidOpen = true);
+    backpackObject.lidOpen == true ? (backpackObject.lidOpen = false) : (backpackObject.lidOpen = true);
 
     // Toggle button text
-    button.innerText == "Open lid" ?
-        (button.innerText = "Close lid") :
-        (button.innerText = "Open lid");
+    button.innerText == "Open lid" ? (button.innerText = "Close lid") : (button.innerText = "Open lid");
 
     // Set visible property status text
     let status = button.parentElement.querySelector(".backpack__lid span");
-    status.innerText == "closed" ?
-        (status.innerText = "open") :
-        (status.innerText = "closed");
+    status.innerText == "closed" ? (status.innerText = "open") : (status.innerText = "closed");
 };
 
 /**
