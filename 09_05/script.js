@@ -60,12 +60,14 @@ const backpackList = backpackObjectArray.map((backpack) => {
     const button = backpackArticle.querySelector(".lid-toggle");
     const status = backpackArticle.querySelector(".backpack__lid span");
 
-    button.addEventListener("click", function(event) {
-        console.log(event);
-        button.innerText === "Open Lid" ? button.innerText = "Close Lid" : button.innerText = "Open Lid";
-        status.innerText === "open" ? status.innerText = "close" : status.innerText = "open";
+    // button.addEventListener("click", function(event) {
+    //     console.log(event);
+    //     button.innerText === "Open Lid" ? button.innerText = "Close Lid" : button.innerText = "Open Lid";
+    //     status.innerText === "open" ? status.innerText = "close" : status.innerText = "open";
 
-    });
+    // });
+
+    button.addEventListener("click", lidToggle);
 
     return backpackArticle;
 });
